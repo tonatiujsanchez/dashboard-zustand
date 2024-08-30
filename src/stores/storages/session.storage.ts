@@ -1,6 +1,6 @@
 import { createJSONStorage, StateStorage } from "zustand/middleware"
 
-export const sessionStorageApi:StateStorage = {
+const sessionStorageApi:StateStorage = {
     getItem: function (name: string): string | null | Promise<string | null> {
         
         const data = sessionStorage.getItem(name)
